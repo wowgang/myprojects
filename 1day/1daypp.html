@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습</title>
+</head>
+<body>
+    <a href="http://naver.com">naver</a>
+    <div>벽돌 최가람</div>
+    <div>벽돌 최가람</div>
+    <div>벽돌 최가람</div>
+    <span>가로 가로가로가</span><span>가로 가로가로가</span><span>가로 가로가로가</span>
+
+    <h1>내가 좋아하는 꽃</h1>
+    <ul>
+        <li>국화</li>
+        <li>민들레</li>
+        <li>목련</li>
+    </ul>
+
+    <hr>
+
+    <h1>내가 좋아하는 음식</h1>
+    <ol>
+        <li>삼겹살</li>
+        <li>토마토</li>
+        <li>파스타</li>
+    </ol>
+
+
+    <dl>
+        <dt>국화</dt>
+        <dd>국화는 개화의형태에 따라 하나의 꽃을 피우는 스탠더드 국화로 다양한 색을 재배 하고 있다.</dd>
+    </dl>
+
+    <h1>표 만들기</h1>
+
+    <h2>1행1열</h2>
+    <table border="1">
+        <tr>
+            <td>1행1열</td>
+        </tr>
+    </table>
+
+    <h2>1행2열</h2>
+    <table border="1">
+        <tr>
+            <td>1행1열</td>
+            <td>1행2열</td>
+            <td>1행3열</td>
+        </tr>
+    </table>
+
+    <h2>2행3열</h2>
+    <table border="1">
+        <tr>
+            <td>1행1열</td>
+            <td>1행2열</td>
+            <td>1행3열</td>
+        </tr>
+        <tr>
+            <td>2행1열</td>
+            <td>2행2열</td>
+            <td>2행3열</td>
+        </tr>
+    </table>
+
+    <h2>셀 합치기</h2>
+    <table border="1">
+        <tr>
+            <td colspan="3">공연요금</td>
+        </tr>
+        <tr>
+            <td>구분</td>
+            <td>s석</td>
+            <td>vip석</td>
+        </tr>
+        <tr>
+            <td>성인</td>
+            <td>2만원</td>
+            <td>3만원</td>
+        </tr>
+        <tr>
+            <td>청소년</td>
+            <td>9천원</td>
+            <td>만원</td>
+        </tr>
+        <tr>
+            <td>소인</td>
+            <td colspan="2">미취학 아동 일반 요금의 60%</td>
+        </tr>
+        <tr>
+            <td rowspan="2">공연시간</td>
+            <td>1회</td>
+            <td>13:00~15:00</td>
+        </tr>
+        <tr>
+            <td>2회</td>
+            <td>17:00~19:00</td>
+        </tr>
+    </table>
+
+    <h1>텍스트 요소</h1>
+
+    <h2>강조</h2>
+    죽는 날까지 <strong>잊혀지지 않는 이름 하나</strong> 가슴 속에 남아 있다면<p>당신은<em>아름답습니다.</em></p>
+    오늘 날씨는 <mark>춥다</mark>
+    
+    <h2>삭제글,추가글</h2>
+    정기세일: <del>2.1~3.1</del> <br>
+    정기세일: <ins>3.2~4.2</ins>
+
+    <h2>윗첨자, 아래첨자</h2>
+    m <sup>2</sup>
+    co <sub>2</sub>
+
+    <h2>progress meter요소</h2>
+    <h2>파일 다운로드</h2>
+   <p> <progress max="100"></progress></p>
+   <h2>투표 상황</h2>
+   <!-- meter 정해져 이쓴 범위 내에서 현재 값 나타낼때 사용 -->
+   <!-- 최소값,최대값,현재값,전체에서 낮은값,높은값(기준잡아주는것) -->
+   <p>
+    <meter min="0" max="100" value="25" low="30" high="65" title="percent"></meter> vaule현재값 25%
+   </p>
+   <p>
+    현재 투표 진행 상황(수원)
+    <meter min="0" max="100" value="40" low="30" high="65"></meter>
+   </p>
+   <p>
+    현재 투표 진행 상황(서울)
+    <meter min="0" max="100" value="60" low="30" high="65"></meter>
+   </p>
+    <p>
+     현재 투표 진행 상황(안산)
+        <meter min="0" max="100" value="80" low="30" high="65"></meter>
+    </p>
+
+    <h1>details, summary</h1>
+    <h2>신간정보</h2>
+    <!-- details : 추가 항목을 숨겼다가 펼쳐주는 기능을 가진 요소 -->
+    <!-- summary :  세부 항목에 대한 제목이나 요약 내용을 써주는 요소 -->
+    <details>
+        <summary>아이폰으로 용돈벌기</summary>
+        <ul>
+            <li>출판사</li>
+            <li>저자</li>
+            <li>가격</li>
+            <li>출간일</li>
+        </ul>
+    </details>
+    <h1>form</h1>
+    <!-- form요소는 범위를 표시
+    action 속성은 실행 애플리케이션을 지정 (입력된 데이터를 처리하는 서버 또는 프로그램) 데이터를 보내려면 브라우저가 전송 위치(url)를 알아야함
+ex)<form action="http://www.example.com/addresscheck.html/">
+     fieldset 입력필드
+    legend 요소는 fieldset 요소의 제목(legend)-->
+</form>
+   
+    <form>
+        <fieldset>
+            <legend>
+                input type
+            </legend>
+    <!-- p>label label의 for값과 input의 id값이 같아야 제목('검색')을 눌렀을때 커서가 잡힌다, for값=id값 이어야 텍스트 작성시에도 'x'삭제 표시가 나온다.  -->
+    <p>
+        <label for="search">검색 : </label>   
+        <input type="search" id="search">
+    </p>    
+    <p>
+        <label for="email">이메일 : </label>   
+        <input type="email" id="email">
+    </p>    
+    <p>
+        <label for="email">이메일 : </label>   
+        <input type="email" id="email">
+    </p>    
+    <p>
+        <label for="email">이메일 : </label>   
+        <input type="email" id="email">
+    </p>    
+    <p>
+        <label for="range">수량 : </label>   
+        <input type="num" id="range" min="1" max="10" value="1">
+    </p>    
+    <!-- input type="number" 이어야 수량 올리고,내리는 표시됨 -->
+            
+        </fieldset>
+    </form>
+
+
+</body>
+</html>
