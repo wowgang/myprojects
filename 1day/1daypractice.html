@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+    <a href="http://naver.com">naver</a>
+    <div>div:벽돌</div>
+    <div>div:벽돌</div>
+    <div>div:벽돌</div>
+    <span>span:가로</span>
+    <span>span:가로</span>
+    <span>span:가로</span>
+    <div>garam</div>
+    <div>garam</div>
+    <div>garam</div>
+    <span>garam</span><span>garam</span><span>garam</span>
+
+    <h1>내가 좋아하는 꽃</h1>
+    <ul>
+        <li>국화</li>
+        <li>민들레</li>
+        <li>후리지아</li>
+    </ul>
+    <hr>
+    <h1>내가 좋아하는 음식</h1>
+    <ol>
+        <li>삼겹살</li>
+        <li>치킨</li>
+        <li>된장찌개</li>
+    </ol>
+    <!-- 정의태그 -->
+    <dl>
+        <dt>국화</dt>
+        <dd>국화는 노란색,파란색,분홍색,흰색 다양하고 엄마가 좋아한다.</dd>
+    </dl>
+
+    <h1>표 만들기</h1>
+    <h2>1행 1열</h2>
+    <table border="1">
+        <tr>
+            <td>1행1열</td>
+        </tr>
+    </table>
+
+    <h2>1행 3열</h2>
+    <table border="1">
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+        </tr>
+    </table>
+
+    <h2>2행 3열</h2>
+    <table border="1">
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+        </tr>
+    </table>
+
+    <h1>셀 합치기</h1>
+    <table border="1">
+        <tr>
+            <td colspan="3">공연요금</td>
+        </tr>
+        <tr>
+            <td>구분</td>
+            <td>s석</td>
+            <td>vip석</td>
+        </tr>
+        <tr>
+            <td>성인</td>
+            <td>3만원</td>
+            <td>5만원</td>
+        </tr>
+        <tr>
+            <td>청소년</td>
+            <td>1만원</td>
+            <td>2만원</td>
+        </tr>
+        <tr>
+            <td>소인</td>
+            <td colspan="2">미취학 아동 일반 요금의 50%</td>
+        </tr>
+        <tr>
+            <td rowspan="2">공연시간</td>
+            <td>1회</td>
+            <td>13:00~15:00</td>
+        </tr>
+            <td>2회</td>
+            <td>16:00~17:00</td>
+    </table>
+
+    <h1>텍스트 요소</h1>
+    <h2>강조</h2>
+    <p>죽는 날까지 <strong>잊혀지지 않는 이름 하나</strong> 가슴 속에 남아 있다면</p>
+    <p>당신은 <em>아름답습니다.</em></p>
+    오늘 날씨는 <mark>춥다.</mark>
+
+    <h1>삭제글,추가글</h1>
+    정기세일:<del>2.1~3.1</del>
+    정기세일:<ins>3.2~4.2</ins>
+
+    <h1>윗첨자, 아래첨자</h1>
+    m <sup>2</sup>
+    m <sub>2</sub>
+  
+    <!-- progress:다운로드 진행 상황 나타낼때 사용 -->
+    <!-- meter:정해져 있는 범위 내에서 현재 값 나타낼 때 사용 -->
+    <h1>progress meter요소</h1>
+    <h2>파일 다운로드</h2>
+    <p>
+        <progress max="100"></progress>
+    </p>
+    <h2>투표상황</h2>
+    <!-- meter:최소값,최대값,현재값, 전체에서 낮은값,높은값(기준잡아줌) -->
+    <p>
+        <meter min="0" max="100" value="80" low="30" high="50"></meter> value현재값80%
+    </p>
+    
+    <p>현재 투표 진행 상황(서울)
+        <meter min="0" max="100" value="60" low="30" high="50"></meter> value현재값60%
+    </p>
+    <p>현재 투표 진행 상황(울산)
+        <meter min="0" max="100" value="20" low="30" high="50"></meter> value현재값20%
+    </p>
+    <p>현재 투표 진행 상황(광주)
+        <meter min="0" max="100" value="90" low="30" high="50"></meter> value현재값90%
+    </p>
+    <!-- details:추가 항목을 숨겼다가 펼쳐주는 기능을 가진요소 -->
+    <!-- summary: 세부 항목에 대한 제목이나 요약 내용을 써주는 요소 -->
+    <details>
+        <summary>아이폰으로 용돈벌기</summary>
+        <ul>
+            <li>출판사:아이콕스</li>
+            <li>저자:정창훈</li>
+            <li>가격:25,</li>
+            <li>출간일:20220330</li>
+        </ul>
+    </details>
+    <!-- label의 for값과 input의 id값이 같아야 제목('검색')을 눌렀을때 커서가 잡힌다. 또한 for값=id값 일때 텍스트 작성시에도 'x'삭제 표시가 생긴다 -->
+
+    <h1>form</h1>
+    <form action="">
+        <fieldset>
+            <legend>
+                input type
+            </legend>
+            <p><label for="search">검색:</label>
+                <input type="search" id="search">
+            </p>
+            <p><label for="email">이메일:</label>
+                <input type="email" id="email">
+            </p>
+            <p> <label for="url">사이트주소:</label>
+                <input type="url" id="url">
+            </p>
+            <p>
+                <label for="tel">전화번호:</label>
+                <input type="tel" id="tel">
+            </p>
+            <!-- 최소값,최대값,현재값 -->
+            <p>
+                <label for="number">수량:</label>
+                <input type="number" id="number" min="1" max="10" value="1">
+            </p>
+            <p>
+                <label for="range">만족도:</label>
+                <input type="range" id="range" min="1" max="10" value="1">
+            </p>
+            <p>
+                <label for="date">날짜:</label>
+                <input type="date" id="date">
+            </p>
+            <p>
+                <label for="month">월</label>
+                <input type="month" id="month">
+            </p>
+            <p>
+                <label for="week">주:</label>
+                <input type="week" id="week">
+            </p>
+            <p>
+                <label for="time">시간:</label>
+                <input type="time" id="time">
+            </p>
+            <p>
+                <label for="color">색상:</label>
+                <input type="color" id="color">
+            </p>
+        </fieldset>
+    </form>
+    <a href="http://naver.com" target="_blank">
+    <img src="./imges/img.jpg" alt="국화"></a>
+    <a href="http://www.google.co.kr" target="_blank">
+    <img src="./imges/figma.svg" alt="figma" width="300"></a>
+    <!-- a>img /target="_blabk" a태그에 넣어주기 -->
+    <!-- <a href=""><img src="" alt=""></a> -->
+</body>
+</html>

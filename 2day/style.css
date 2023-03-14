@@ -1,0 +1,6 @@
+p:nth-child(1){color:aquamarine}
+        p:nth-child(2){color:hsl(52, 95%, 58%)}
+        div {width: 200px; height: 50px; background-color: cornflowerblue; 
+text-align: center; line-height: 50px; cursor:pointer;
+        }
+        div:hover {background-color: blueviolet; color: aliceblue;}

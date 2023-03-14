@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout2-블로그 구조</title>
+</head>
+<style>
+    /* 기본정렬: 상단과하단이 왼쪽으로 붙어있다. */
+    /* layout은 1px만 초과돼도 다 틀어짐.(모자라는 거는 괜찮음)
+    가로 사이즈가 중요!! */
+
+    /* reset */
+    *{margin: 0; padding: 0;}
+    .fl {float: left;} 
+    /* 블록 구조의 박스를 인라인 구조로 정렬(가로로정렬)*/
+    .cb {clear:both;}
+    /* left,right취소 (clear:both;=초기화)
+    header는 두고 #cb(aside,section,footer)만 */
+    #wrap {
+        margin: 0 auto; width: 700px; height: 550px; 
+        /* auto -상단,하단 :0 /좌우:중앙정렬됨 */
+        border: 1px solid red;
+    }
+    #wrap header {
+        width: 700px; height: 100px; background-color: #B4D33A;
+    }
+    #wrap header .logo { width: 200px; height: 100px; background-color: #8888;}
+    #wrap header .menu { width: 500px; height: 100px;}
+
+    .B { width: 100px; height: 100px; background-color: #1AA3D6;}
+    .C { width: 100px; height: 100px; background-color: #5A6A21;}
+    .D { width: 100px; height: 100px; background-color: #336666;}
+    .E { width: 100px; height: 100px; background-color: #CC6633;}
+
+    .F { width:500px; height: 200px; background-color: #165EA7;}
+    .G { width:500px; height: 200px; background-color: #12C48C;}
+
+    .H { width: 100px; height: 100px; background-color: #ff9900;}
+    .I { width: 100px; height: 100px; background-color: #8E6A98;}
+    .J { width: 100px; height: 200px; background-color: #993333;}
+
+    #wrap footer {
+        width: 700px; height: 50px; background-color: #999999;
+    }
+</style>
+<body>
+    <!-- #wrap>header+#center.cb -->
+    <div id="wrap">
+        <header>
+            <!-- .logo.fl+.menu.fl -->
+            <!-- .logo는 class 
+                 .은 띄어쓰기
+                 fl까지 class이름-->
+            <div class="logo fl">(header logo fl)</div>
+            <div class="menu fl">(header menu fl)</div>
+        </header>
+        <div id="center" class="cb">
+            <!-- asid.fl+section.fl+aside.fl -->
+            <asid class="fl">
+                <div class="B">aside(.cb.fl)B</div>
+                <div class="C">aside(.cb.fl)C</div>
+                <div class="D">aside(.cb.fl)D</div>
+                <div class="E">aside(.cb.fl)E</div>
+            </asid>
+            <section class="fl">
+                <div class="F">section(.cb.fl)F</div>
+                <div class="G">section(.cb.fl)G</div>
+            </section>
+            <aside class="fl">
+                <div class="H">aside(.cb.fl)H</div>
+                <div class="I">aside(.cb.fl)I</div>
+                <div class="J">aside(.cb.fl)J</div>
+            </aside>
+        </div>
+        <!-- footer.cb -->
+        <footer class="cb">footer(cb)K</footer>
+    </div>
+    
+</body>
+</html>

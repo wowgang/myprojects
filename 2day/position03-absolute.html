@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positon-absolute</title>
+    <style>
+        /* reset */
+        *{margin: 0;}
+        div{width: 200px; height: 200px;
+            position: absolute;
+        }
+            /* absolute를 해야 box들이 위치이동이 됨  */
+        .box1 {background-color: red; top: 0; left: 0; z-index: 3;}
+        .box2 {background-color: green; top: 100px; left: 100px; z-index: 2;}
+        .box3 {background-color: blue; bottom: 50px; right: 50px; z-index: 1;}
+        /* 기본은 마지막선언이 가장 상위에 위치하는데 z-index로 위치 변경가능하다.
+        box1은 가장 먼저 선언되어서 가장 하위에 위치이나 z-index:3;으로 가장 상위로 위치 변경함 
+        수치가 클수록 위에 배치한다.*/
+    </style>
+</head>
+<body>
+    <!-- div.box$*3 / $붙이면 box에 넘버링됨 -->
+    <div class="box1">first</div>
+    <div class="box2">second</div>
+    <div class="box3">third</div>
+    
+</body>
+</html>
